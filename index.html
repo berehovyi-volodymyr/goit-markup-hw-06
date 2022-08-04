@@ -63,23 +63,38 @@
                         <h1 class="modal-title">Залиште свої дані, ми вам передзвонимо</h1>
                         <form name="call-back">
                             <div class="form">
-                                <div class="user-name">
+                                <div class="form-field">
                                     <label for="name" class="label">Ім'я</label>
+                                    <svg class="icon">
+                                        <use href="./images/symbol-defs.svg#person-black"></use>
+                                    </svg>
                                     <input type="text" name="user-name" id="name" class="field">
                                 </div>
                                 
-                                <label for="tel" class="label">Телефон</label>
-                                <input type="tel" name="tel" id="tel" class="field">
+                                <div class="form-field">
+                                    <label for="tel" class="label">Телефон</label>
+                                    <input type="tel" name="tel" id="tel" class="field">
+                                    <svg class="icon">
+                                        <use href="./images/symbol-defs.svg#phone-black"></use>
+                                    </svg>
+                                </div>
                                 
-                                <label for="mail" class="label">Пошта</label>
-                                <input type="email" name="mail" id="mail" class="field">
+                                <div class="form-field">
+                                    <label for="mail" class="label">Пошта</label>
+                                    <svg class="icon">
+                                        <use href="./images/symbol-defs.svg#email-black"></use>
+                                    </svg>  
+                                    <input type="email" name="mail" id="mail" class="field">
+                                </div>
                                 
                                 <label for="comment" class="label">Коментар</label>
                                 <textarea name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
                                 
                                 <div class="checkbox">
-                                    <input type="checkbox" class="checkbox-point" id="checkbox">
-                                    <label for="checkbox" class="checkbox-agreement" class="checkbox-comment">Погоджуюся з розсилкою та приймаю <a href=""class="checkbox-link">Умови договору</a></label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" class="checkbox-point">
+                                        <span class="custom-checkbox"></span>
+                                        Погоджуюся з розсилкою та приймаю <a href=""class="checkbox-link">Умови договору</a></label>
                                 </div>
                             </div>
 
