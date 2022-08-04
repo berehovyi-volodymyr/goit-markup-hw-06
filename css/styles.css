@@ -252,6 +252,16 @@ textarea {
     padding: 12px 16px;
     resize: none;
     max-height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea:hover,
+textarea:focus{
+    border-color: var(--accent-color);
 }
 
 textarea::placeholder{
@@ -265,8 +275,8 @@ textarea::placeholder{
     font-size: 14px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 42px;
     margin-bottom: 10px;
 
@@ -275,15 +285,13 @@ textarea::placeholder{
 
 .field:hover,
 .field:focus {
+    outline: none;
     border: 1px solid #2196F3;
 }
 
 .user-name{
     display: flex;
     flex-direction: column;
-}
-.user-name:focus-within > .label{
-    color: #188CE8;
 }
 
 .checkbox{
